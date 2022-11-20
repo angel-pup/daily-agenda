@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -23,7 +20,612 @@
   </head>
 
   <body>
-    <header class="jumbotron">
+
+  Bulma: Free, open source, and modern CSS framework based on Flexbox
+  Docs
+  Videos
+  Expo
+  Love
+  Backers
+  Bulma extensions
+  Side projects to enhance Bulma
+  The official Bulma book
+  A step-by-step guide that teaches you how to build a web interface from scratch using Bulma
+  Blog
+  Stay updated with new features
+  Brand
+  The official Bulma logos
+  Bulma start
+  A tiny npm package to get started
+  Made with Bulma
+  The official community badge
+  Coming from Bootstrap
+  See how Bulma is an alternative to Bootstrap
+
+  Guides
+  Overview
+  Customize
+  Utilities
+
+  CSS Library
+  Columns
+  Elements
+  Components
+  Form
+  Layout
+
+  Container
+  Level
+  Media Object
+  Hero
+  Section
+  Footer
+  Tiles
+
+  Helpers
+
+  Hero
+
+  An imposing hero banner to showcase something
+
+  The hero component allows you to add a full width banner to your webpage, which can optionally cover the full height of the page as well.
+
+  The basic requirement of this component are:
+
+  hero as the main container
+  hero-body as a direct child, in which you can put all your content
+
+  For the fullheight hero to work, you will also need a hero-head and a hero-foot.
+
+  Example
+
+  Hero title
+
+  Hero subtitle
+
+  HTML
+
+  <section class="hero">
+    <div class="hero-body">
+      <p class="title">
+        Hero title
+      </p>
+      <p class="subtitle">
+        Hero subtitle
+      </p>
+    </div>
+  </section>
+
+  Colors
+  #
+  As with buttons, you can choose one of the 8 different colors:
+
+  Example
+
+  Primary hero
+
+  Primary subtitle
+
+  HTML
+
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">
+        Primary hero
+      </p>
+      <p class="subtitle">
+        Primary subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Link hero
+
+  Link subtitle
+
+  HTML
+
+  <section class="hero is-link">
+    <div class="hero-body">
+      <p class="title">
+        Link hero
+      </p>
+      <p class="subtitle">
+        Link subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Info hero
+
+  Info subtitle
+
+  HTML
+
+  <section class="hero is-info">
+    <div class="hero-body">
+      <p class="title">
+        Info hero
+      </p>
+      <p class="subtitle">
+        Info subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Success hero
+
+  Success subtitle
+
+  HTML
+
+  <section class="hero is-success">
+    <div class="hero-body">
+      <p class="title">
+        Success hero
+      </p>
+      <p class="subtitle">
+        Success subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Warning hero
+
+  Warning subtitle
+
+  HTML
+
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <p class="title">
+        Warning hero
+      </p>
+      <p class="subtitle">
+        Warning subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Danger hero
+
+  Danger subtitle
+
+  HTML
+
+  <section class="hero is-danger">
+    <div class="hero-body">
+      <p class="title">
+        Danger hero
+      </p>
+      <p class="subtitle">
+        Danger subtitle
+      </p>
+    </div>
+  </section>
+
+  Sizes
+  #
+
+  You can have even more imposing banners by using one of 5 different sizes:
+
+  is-small
+  is-medium
+  is-large
+  is-halfheight
+  is-fullheight
+
+  Example
+
+  Small hero
+
+  Small subtitle
+
+  HTML
+
+  <section class="hero is-small is-primary">
+    <div class="hero-body">
+      <p class="title">
+        Small hero
+      </p>
+      <p class="subtitle">
+        Small subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Medium hero
+
+  Medium subtitle
+
+  HTML
+
+  <section class="hero is-medium is-link">
+    <div class="hero-body">
+      <p class="title">
+        Medium hero
+      </p>
+      <p class="subtitle">
+        Medium subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Large hero
+
+  Large subtitle
+
+  HTML
+
+  <section class="hero is-large is-info">
+    <div class="hero-body">
+      <p class="title">
+        Large hero
+      </p>
+      <p class="subtitle">
+        Large subtitle
+      </p>
+    </div>
+  </section>
+
+  Example
+
+  Half height hero
+
+  Half height subtitle
+
+  HTML
+
+  <section class="hero is-success is-halfheight">
+    <div class="hero-body">
+      <div class="">
+        <p class="title">
+          Half height hero
+        </p>
+        <p class="subtitle">
+          Half height subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+
+  Example
+
+  Fullheight hero
+
+  Fullheight subtitle
+
+  HTML
+
+  <section class="hero is-danger is-fullheight">
+    <div class="hero-body">
+      <div class="">
+        <p class="title">
+          Fullheight hero
+        </p>
+        <p class="subtitle">
+          Fullheight subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+
+  Fullheight with navbar
+  #
+
+  If you are using a fixed navbar, you can use the is-fullheight-with-navbar modifier on the hero for it to occupy the viewport height minus the navbar height.
+
+  Example
+  Home
+  Documentation
+
+  Fullheight hero with navbar
+
+  HTML
+
+  <nav class="navbar">
+    <div class="container">
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Documentation
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-dark">Github</a>
+              <a class="button is-link">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-body">
+      <p class="title">
+        Fullheight hero with navbar
+      </p>
+    </div>
+  </section>
+
+  Fullheight hero in 3 parts
+  #
+
+  To obtain a hero that will cover the whole height of the viewport, you can split it in 3 vertical parts:
+
+  hero
+  hero-head (always at the top)
+  hero-body (always vertically centered)
+  hero-foot (always at the bottom)
+
+  Example
+  Logo
+  Home
+  Examples
+  Documentation
+
+  Title
+
+  Subtitle
+
+  HTML
+
+  <section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Examples
+              </a>
+              <a class="navbar-item">
+                Documentation
+              </a>
+              <span class="navbar-item">
+              <a class="button is-primary is-inverted">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Title
+        </p>
+        <p class="subtitle">
+          Subtitle
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a>Overview</a></li>
+            <li><a>Modifiers</a></li>
+            <li><a>Grid</a></li>
+            <li><a>Elements</a></li>
+            <li><a>Components</a></li>
+            <li><a>Layout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  Example
+  Logo
+  Home
+  Examples
+  Documentation
+
+  Title
+
+  Subtitle
+
+  HTML
+
+  <section class="hero is-info is-large">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroB">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Examples
+              </a>
+              <a class="navbar-item">
+                Documentation
+              </a>
+              <span class="navbar-item">
+              <a class="button is-info is-inverted">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Title
+        </p>
+        <p class="subtitle">
+          Subtitle
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active">
+              <a>Overview</a>
+            </li>
+            <li>
+              <a>Modifiers</a>
+            </li>
+            <li>
+              <a>Grid</a>
+            </li>
+            <li>
+              <a>Elements</a>
+            </li>
+            <li>
+              <a>Components</a>
+            </li>
+            <li>
+              <a>Layout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  Example
+  Logo
+  Home
+  Examples
+  Documentation
+
+  Title
+
+  Subtitle
+
+  HTML
+
+  <section class="hero is-success is-fullheight">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <span class="navbar-item">
+              <a id="to-github" class="button is-success is-inverted">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Weekday Calendar
+        </p>
+        <p class="subtitle">
+          Subtitle
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a>Sun</a></li>
+            <li><a>Mon</a></li>
+            <li><a>Tue</a></li>
+            <li><a>Wed</a></li>
+            <li><a>Thu</a></li>
+            <li><a>Fri</a></li>
+            <li><a>Sat</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
