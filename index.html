@@ -3,41 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="list-group">
-        <div class="list-group-item">
-
+  <section class="hero is-info is-medium block">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <p>Planner Home Page</p>
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a id="to-github" class="button is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
+      </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Day Planner
+        </p>
+        <p class="subtitle">
+          A simple calendar app for scheduling your day
+        </p>
+        <p id="day-of-week" class="subtitle">
+          <span>Sunday</span>'s Agenda
+        </p>
       </div>
     </div>
 
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a>Sun</a></li>
+            <li><a>Mon</a></li>
+            <li><a>Tue</a></li>
+            <li><a>Wed</a></li>
+            <li><a>Thu</a></li>
+            <li><a>Fri</a></li>
+            <li><a>Sat</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section id="agenda" class="container block">
+    <div class="columns pt-6">
+      <div class="column is-12">
+        <article id="agenda-content" class="block">
+          <!--<div class="content columns box">
+            <div class="column is-1 is-align-content-center">
+              <img class="image is-1by1" src="./assets/images/icons/time-hollow-128.png" alt="clock"/>
+            </div>
+            <div class="column is-1 has-text-centered"><p>time</p></div>
+            <div class="column is-8">
+              <p></p>
+            </div>
+            <div class="column is-offset-1 is-1"><a class="button image is-64x64 unlocked"></a></div>
+          </div>-->
+          <div class="card">
+            <div class="card-header">
+              <p class="card-header-title">
+                Time
+              </p>
+              <button class="card-header-icon card-toggle" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="card-content is-hidden">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer is-hidden">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+            </footer>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/80dd72eaf4.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/components.js"></script>
   </body>
 </html>
